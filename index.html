@@ -133,6 +133,37 @@
 			letter-spacing: 0px;
 			color: hsl(30, 10%, 34%);
 		}
+
+		.nutrition {
+			width: 100%;
+			border-collapse: collapse;
+			table-layout: fixed;
+			margin-top: 16px;
+		}
+
+		.nutrition th,
+		.nutrition td {
+			padding: 20px 24px;
+		}
+
+		.nutrition tr+tr th,
+		.nutrition tr+tr td {
+			border-top: 1px solid hsl(30, 18%, 87%);
+		}
+
+		.nutrition td {
+			text-align: left;
+			font-family: "Outfit", serif;
+			size: 16px;
+			line-height: 150%;
+			letter-spacing: 0px;
+			color: hsl(30, 10%, 34%);
+		}
+
+		.nutrition td.value {
+			color: hsl(14, 45%, 36%);
+			font-weight: bold;
+		}
 	</style>
 </head>
 
@@ -174,17 +205,20 @@
 		<div>
 			<h1>Instructions</h1>
 			<ol class="instructions">
-				<li><strong>Beat the eggs:</strong>In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed.
+				<li><strong>Beat the eggs:</strong>In a bowl, beat the eggs with a pinch of salt and pepper until they are well
+					mixed.
 					You can add a tablespoon of water or milk for a fluffier texture.
 				</li>
 				<li><strong>Heat the pan:</strong> Place a non-stick frying pan over medium heat and add butter or oil.</li>
 				<li>Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure
 					the eggs evenly coat the surface.
 				</li>
-				<li><strong>Add fillings (optional):</strong> When the eggs begin to set at the edges but are still slightly runny in the
+				<li><strong>Add fillings (optional):</strong> When the eggs begin to set at the edges but are still slightly
+					runny in the
 					middle, sprinkle your chosen fillings over one half of the omelette.
 				</li>
-				<li><strong>Fold and serve:</strong> As the omelette continues to cook, carefully lift one edge and fold it over the
+				<li><strong>Fold and serve:</strong> As the omelette continues to cook, carefully lift one edge and fold it over
+					the
 					fillings. Let it cook for another minute, then slide it onto a plate.
 				</li>
 				<li><strong>Enjoy:</strong> Serve hot, with additional salt and pepper if needed.</li>
@@ -196,22 +230,22 @@
 		<div>
 			<h1>Nutrition</h1>
 			<p class="regular-text">The table below shows nutritional values per serving without the additional fillings.</p>
-			<table>
+			<table class="nutrition">
 				<tr>
 					<td>Calories</td>
-					<td>277kcal</td>
+					<td class="value">277kcal</td>
 				</tr>
 				<tr>
 					<td>Carbs</td>
-					<td>0g</td>
+					<td class="value">0g</td>
 				</tr>
 				<tr>
 					<td>Protein</td>
-					<td>20g</td>
+					<td class="value">20g</td>
 				</tr>
 				<tr>
 					<td>Fat</td>
-					<td>22g</td>
+					<td class="value">22g</td>
 				</tr>
 			</table>
 		</div>
